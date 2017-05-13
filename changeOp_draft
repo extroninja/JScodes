@@ -1,0 +1,19 @@
+$('.test').on('mouseover', function changeOp(){
+    //change opacity onclick	
+  
+	var myOp = $(this).css('background').charAt(16);
+	  if(isNaN(myOp)){
+    	myOp = 1;
+    };
+	myOp = parseInt(myOp);
+	myOp ++;    
+	$(this).css('background','rgba(0,0,0,.' + myOp + ')');
+	console.log(myOp);
+	if (myOp >= 9){
+		$(this).css('background','rgb(0,0,0)');
+		return;
+	}
+	//need to: ifNaN control
+			// if black ->stop;
+	// problem ifNaN cycle
+});
