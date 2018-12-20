@@ -1,0 +1,14 @@
+function min(a,b) {
+   return a>b ? console.log(b) : console.log(a); 
+} //minimal number
+
+function pow(x,n) {
+   x = prompt('введите число');
+   n = prompt('введите степень');
+   var powResult = x;
+   for (let i = 1; i < n; i++){
+      
+      powResult = powResult*x;
+} //power 
+
+   
