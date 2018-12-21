@@ -11,4 +11,32 @@ function pow(x,n) {
       powResult = powResult*x;
 } //power 
 
-   
+
+function sumTo(n) {
+   var result = n;
+   for (n ; n > 1 ; n--) {
+      result = result +  (n - 1);
+   }
+  return result;
+   //formula//
+//return ((1 + n)/2)*n;
+//formulaEnd//
+
+//recursion//
+// if (n > 1){
+//   return n + sumTo(n-1);
+//  }
+//  else return n;
+//end of recursion//   
+}  
+
+function fib(n) {
+	var first = 0;
+	var second = 1;
+	for (var i = 1; i < n; i++) {
+		var next = first + second;
+		first = second;
+		second = next;
+	}
+	return next;
+}
