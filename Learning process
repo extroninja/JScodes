@@ -62,3 +62,15 @@ function find(arr, value) {
     }
     return -1;
 }
+
+//добавляет 
+function addClass(obj,cls){
+    
+    var arr = obj.className.split(' ');
+    if (arr.indexOf(cls) == -1 ) {
+        arr.push(cls);
+        return obj.className = arr.join(' ');    
+    }
+    else return obj.className = arr.join(' ');
+    
+}
