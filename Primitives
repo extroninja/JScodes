@@ -40,3 +40,25 @@ function fib(n) {
 	}
 	return next;
 }
+//Возвращает новый массив с числами из диапазона от a до b
+function filterRange(arr, a, b) {
+    var resultArr = [];
+    for (var i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+        if (arr[i] >= a && arr[i] <= b) {
+            newArr.push(arr[i]);
+        }
+
+    }
+    return resultArr;
+}
+
+//Возвращает индекс искомого значения из массива, если его нет то -1
+function find(arr, value) {
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] === value) {
+            return i;
+        }
+    }
+    return -1;
+}
