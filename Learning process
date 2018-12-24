@@ -74,3 +74,12 @@ function addClass(obj,cls){
     else return obj.className = arr.join(' ');
     
 }
+
+//преобразует строки вида «my-short-string» в «myShortString»
+function camelize(str) {
+    var myArr = str.split('-');
+    for (let i = 1; i < myArr.length; i++) {
+        myArr[i] = myArr[i].charAt(0).toUpperCase() + myArr[i].slice(1);
+    }
+    return myArr.join('');
+}
