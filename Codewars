@@ -6,3 +6,18 @@ do {
     population += 50;
     year++;
 } while (population <= 1200)
+
+//Friend or Foe (My)
+function friend(friends){
+  var result = [];
+    friends.forEach(element => {
+        if (element.length == 4) {
+            result.push(element);
+        };
+    });
+   return result;
+}
+//Best
+function friend(friends){
+  return friends.filter(n => n.length === 4)
+}
