@@ -1,0 +1,8 @@
+//Population
+let population = 1000;
+let year = 0;
+do {
+    population += (population * 0.05);
+    population += 50;
+    year++;
+} while (population <= 1200)
